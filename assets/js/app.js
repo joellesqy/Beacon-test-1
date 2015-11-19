@@ -19,7 +19,8 @@ $(document).ready(function () {
 		
 		// vibrate for 60 second
 		navigator.vibrate(60000);	
-		}else{
+		}
+		else{
 			$('#vgreeting').html('No Vibration is allowed!!!');
 		}
 	});
