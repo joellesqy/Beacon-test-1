@@ -5,8 +5,8 @@ $(document).ready(function () {
 	});
 	
 	$(".vibratepage-btn").click(function () {
-		$('#greeting').html('Redirect to vibrate page');
-		$('#greeting').css("color", "#FF0000");
+		$('#vgreeting').html('Redirect to vibrate page');
+		$('#vgreeting').css("color", "#FF0000");
      window.location.href = "vibrate.html";
     });
 	
@@ -20,7 +20,7 @@ $(document).ready(function () {
 		// vibrate for 60 second
 		navigator.vibrate(60000);	
 		}else{
-			$('#greeting').html('No Vibration is allowed!!!');
+			$('#vgreeting').html('No Vibration is allowed!!!');
 		}
 	});
 });
