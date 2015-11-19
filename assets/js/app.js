@@ -10,8 +10,12 @@ $(document).ready(function () {
 		if (navigator.vibrate) {
 		// vibration API supported
 		
-		// vibrate for one second
+		// vibrate for 60 second
 		navigator.vibrate(60000);
+		
+			
+		}else{
+			$('#greeting').html('No Vibration is allowed!!!');
 		}
 	});
 });
