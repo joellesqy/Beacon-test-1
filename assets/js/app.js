@@ -4,14 +4,14 @@ $(document).ready(function () {
 	});
 	
 	$(".vibrate-btn").click(function(){
-		//// enable vibration support
-		//navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+		// enable vibration support
+		navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
 
 		if (navigator.vibrate) {
 		// vibration API supported
 		
 		// vibrate for one second
-		navigator.vibrate(1000);
+		navigator.vibrate(60000);
 		}
 	});
 });
