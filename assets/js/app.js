@@ -1,14 +1,8 @@
 $(document).ready(function () {
-	$(".joelle-btn").click(function () {
-		$('#greeting').html('Beacon detected!!!');
-		$('#greeting').css("color", "#FF0000");
+	$(".changewords-btn").click(function () {
+		$('#cwgreeting').html('Change of words successful!!!');
+		$('#cwgreeting').css("color", "#FF0000");
 	});
-	
-	$(".vibratepage-btn").click(function () {
-		$('#vgreeting').html('Redirect to vibrate page');
-		$('#vgreeting').css("color", "#FF0000");
-     window.location.href = "vibrate.html";
-    });
 	
 	$(".vibrate-btn").click(function(){
 		// enable vibration support
@@ -24,4 +18,37 @@ $(document).ready(function () {
 			$('#vgreeting').html('No Vibration is allowed!!!');
 		}
 	});
+
+	$(".happymood-btn").click(function (){
+		$('#cwgreeting').html("dog.name");
+		$('#cwgreeting').css("color", "#FF00B3");
+	});
+	
+	$(".torchlight-btn").click(function () {
+		window.plugins.flashlight.available(function(isAvailable) {
+		  if (isAvailable) {
+
+			// switch on
+			window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
+
+			// switch off after 3 seconds
+			setTimeout(function() {
+			  window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
+			}, 3000);
+
+		  } else {
+			alert("Flashlight not available on this device");
+		  }
+		})
+		
+		document.addEventListener("backbutton", function() {
+		// pass exitApp as callbacks to the switchOff method
+		window.plugins.flashlight.switchOff(exitApp, exitApp);
+		}, false);
+
+		function exitApp() {
+		navigator.app.exitApp();
+		}
+	});
+	
 });
