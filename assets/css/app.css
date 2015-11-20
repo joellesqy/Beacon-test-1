@@ -1,29 +1,40 @@
 #menutitle{
 	margin-top:15px;
+	font-size: 1.5em;
 }
 
-.middle-button{
-	text-align:center;
+#mainpage{
 	margin-top: 15px;
 }
 
 #vgreeting{
 	margin-top:15px;
 }
+
+.vmiddle-container{
+	text-align:center;
+	margin-top: 15px;
+}
+
 #cwgreeting{
 	margin-top:15px;
 }
 
-.changewords-btn{
+.cwmiddlebtn-container{
 	text-align: center;
 	margin-top: 15px;	
 }
 
-.happymood-btn{
+.mmiddlebtn-container{
 	text-align: center;
 	margin-top:15px
 }
 
 #tgreeting{
 	margin-top:15px;
+}
+
+.tmiddlebtn-container{
+	text-align: center;
+	margin-top: 15px;
 }
