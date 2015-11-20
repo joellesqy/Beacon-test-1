@@ -1,31 +1,3 @@
-<!-- Always shows a header, even in smaller screens. -->
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Test App</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-        <a class="mdl-navigation__link" href="">Link 1</a>
-        <a class="mdl-navigation__link" href="">Link 2</a>
-        <a class="mdl-navigation__link" href="">Link 3</a>
-        <a class="mdl-navigation__link" href="">Link 4</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title"; id="menutitle";>Menu</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="index.html" id="mainmenupage">Main Page</a>
-      <a class="mdl-navigation__link" href="vibrate.html"; id="vibratepage">Vibration</a>
-      <a class="mdl-navigation__link" href="">SideLink1</a>
-      <a class="mdl-navigation__link" href="">SideLink2</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content">
 <!DOCTYPE html>
 <html>
   <head>
@@ -38,7 +10,28 @@
 	<script src="assets/js/app.js"></script>
   </head>
   
-  <body>
+  <body>  
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+		  <!-- Title -->
+		  <span class="mdl-layout-title">Test App</span>
+		</div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title"; id="menutitle";>Menu</span>
+		<nav class="mdl-navigation">
+		  <a class="mdl-navigation__link" href="index.html" id="mainmenupage">Main Page</a>
+		  <a class="mdl-navigation__link" href="vibrate.html"; id="vibratepage">Vibration</a>
+		  <a class="mdl-navigation__link" href="">SideLink1</a>
+		  <a class="mdl-navigation__link" href="">SideLink2</a>
+		</nav>
+	  </div>
+	  
+	  <main class="mdl-layout__content">
+	  
+		<div class="page-content">
     <div style="text-align:center;font-size:1.5em;" id="cwgreeting">
       Welcome to Change Words Page!
     </div>
@@ -51,11 +44,9 @@
 	<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored happymood-btn">
 	  <i class="material-icons">mood</i>
 	</button>
+		</div>
 	
-  </body>
-  
-</html>
-
+	</main>
 	</div>
-  </main>
-</div>
+  </body>
+</html>
