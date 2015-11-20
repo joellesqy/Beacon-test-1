@@ -40,15 +40,6 @@ $(document).ready(function () {
 			alert("Flashlight not available on this device");
 		  }
 		})
-		
-		document.addEventListener("backbutton", function() {
-		// pass exitApp as callbacks to the switchOff method
-		window.plugins.flashlight.switchOff(exitApp, exitApp);
-		}, false);
-
-		function exitApp() {
-		navigator.app.exitApp();
-		}
 	});
 	
 });
