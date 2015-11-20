@@ -13,5 +13,6 @@
         An example for phonegap build docs. 
     </description>
 
+	<gap:plugin name="cordova-plugin-flashlight" source="npm />
 
 </widget>
