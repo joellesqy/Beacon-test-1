@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.Beacon-Test-1"
+        id        = "com.joelle.beacontestapp"
         version   = "1.0.0">
 
     <name>Beacon-Test-1</name>
@@ -68,7 +68,6 @@
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
-		<gap:plugin name="cordova-plugin-flashlight" source="npm />
     -->
 	<gap:plugin name="cordova-plugin-flashlight" source="npm />
 
