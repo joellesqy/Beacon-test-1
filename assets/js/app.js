@@ -1,3 +1,6 @@
+window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
+  alert("errorMsg "+errorMsg+"\nurl "+url+"\nlineNumber "+lineNumber);
+}
 $(document).ready(function () {
 	$(".changewords-btn").click(function () {
 		$('#cwgreeting').html('Change of words successful!!!');
@@ -36,7 +39,7 @@ $(document).ready(function () {
 			}, 30000);
 
 		  } else {
-			$('#tgreeting').html("Flashlight not available on this device");
+			alert("Flashlight not available on this device");
 		  }
 		})
 	});
