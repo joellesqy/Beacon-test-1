@@ -13,6 +13,6 @@
         Testing functions for apps
     </description>
 	
-	<plugin name="nl.x-services.plugins.flashlight" spec="2.0.0" />
+	<plugin name="nl.x-services.plugins.flashlight" spec="2.0.1" source="pgb" />
 
 </widget>
