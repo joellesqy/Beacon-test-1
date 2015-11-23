@@ -27,14 +27,13 @@ $(document).ready(function () {
 	$(".torchlight-btn").click(function () {
 		window.plugins.flashlight.available(function(isAvailable) {
 		  if (isAvailable) {
-
 			// switch on
 			window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
 
-			// switch off after 3 seconds
+			// switch off after 30 seconds
 			setTimeout(function() {
 			  window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-			}, 3000);
+			}, 30000);
 
 		  } else {
 			alert("Flashlight not available on this device");
