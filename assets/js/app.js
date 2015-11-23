@@ -27,21 +27,30 @@ $(document).ready(function () {
 		$('#cwgreeting').css("color", "#FF00B3");
 	});
 	
-	$(".torchlight-btn").click(function () {
+	$(".torchlighton-btn").click(function () {
 		window.plugins.flashlight.available(function(isAvailable) {
 		  if (isAvailable) {
 			// switch on
-			window.plugins.flashlight.switchOn(); // success/error callbacks may be passed
-
-			// switch off after 30 seconds
-			setTimeout(function() {
-			  window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-			}, 30000);
-
-		  } else {
+			window.plugins.flashlight.switchOn();			// success/error callbacks may be passed
+			$('#tgreeting').html("Flashlight is switched on");
+			$('#tgreeting').css("color", "#FF0000");} 
+			else {
 			alert("Flashlight not available on this device");
 		  }
 		})
 	});
+	
+	$(".torchlightoff-btn").click(function (){
+		if(windows.plugins.flashlight.isSwitchedOn = true)
+		{
+			window.plugins.flashlight.switchOff();
+			$('#tgreeting').html("Flashlight is switched off");
+		}
+		else{
+			alert("Flashlight is already switched off");
+		}
+	}
+	
+	)
 	
 });

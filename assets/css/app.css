@@ -34,7 +34,12 @@
 	margin-top:15px;
 }
 
-.tmiddlebtn-container{
+.tonbtn-container{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.toffbtn-container{
 	text-align: center;
 	margin-top: 15px;
 }
