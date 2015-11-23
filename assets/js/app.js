@@ -36,7 +36,7 @@ $(document).ready(function () {
 			}, 30000);
 
 		  } else {
-			alert("Flashlight not available on this device");
+			$('#tgreeting').html("Flashlight not available on this device");
 		  }
 		})
 	});
