@@ -40,15 +40,15 @@ $(document).ready(function () {
 		})
 	});
 	
-	$(".torchlightoff-btn").click(function (){
-		windows.plugins.flashlight.isSwitchedOn(function(isSwitchedOn)
-		{
-			window.plugins.flashlight.switchOff();
-			$('#tgreeting').html("Flashlight is switched off");
-		}
-		else{
-			alert("Flashlight is already switched off");
-		})
-	});
+	//$(".torchlightoff-btn").click(function (){
+		//windows.plugins.flashlight.isSwitchedOn(function(isSwitchedOn)
+		//{
+			//window.plugins.flashlight.switchOff();
+			//$('#tgreeting').html("Flashlight is switched off");
+		//}
+		//else{
+			//alert("Flashlight is already switched off");
+		//})
+	//});
 	
 });
