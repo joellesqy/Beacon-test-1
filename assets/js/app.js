@@ -41,16 +41,14 @@ $(document).ready(function () {
 	});
 	
 	$(".torchlightoff-btn").click(function (){
-		if(windows.plugins.flashlight.isSwitchedOn = true)
+		windows.plugins.flashlight.isSwitchedOn(function(isSwitchedOn)
 		{
 			window.plugins.flashlight.switchOff();
 			$('#tgreeting').html("Flashlight is switched off");
 		}
 		else{
 			alert("Flashlight is already switched off");
-		}
-	}
-	
-	)
+		})
+	});
 	
 });
