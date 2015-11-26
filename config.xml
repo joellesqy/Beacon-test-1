@@ -14,6 +14,6 @@
     </description>
 	
 	<plugin name="nl.x-services.plugins.flashlight" spec="2.0.1" source="pgb" />
-	<plugin name="com.estimote.sdk" spec="1.1.0" source="pgb" />
+	<plugin name="ptdev.makingwaves2.estimotes" spec="1.0.1" source="pgb" />
 	
 </widget>
