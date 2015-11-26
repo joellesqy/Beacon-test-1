@@ -1,6 +1,6 @@
 var region = { identifier: 'MyRegion' }
 
-EstimoteBeacons.startRangingBeaconsInRegion(
+beacons.startRangingBeaconsInRegion(
    region,
    onBeaconsRanged,
    onError)
