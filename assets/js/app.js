@@ -21,11 +21,6 @@ $(document).ready(function () {
 			$('#vgreeting').html('No Vibration is allowed!!!');
 		}
 	});
-	
-	$('#id-screen-home-button-scan-beacons').click(function(){
-		$('#id-screen-home-button-scan-beacons')[0],
-			app.startScanningBeacons);
-	});
 
 	$(".happymood-btn").click(function (){
 		$('#cwgreeting').html("dog.name");
