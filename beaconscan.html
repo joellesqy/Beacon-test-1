@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test App: Beacon Scan Page</title>
+	<link rel="stylesheet" href="assets/css/material.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/app.css" />
+	
+	<script src="assets/js/material.min.js"></script>
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<script src="phonegap.js"></script>
+	<script src="assets/js/screen-scan-beacons.js"></script>
+	<script src="assets/js/beacon.js"></script>
+	<script src="assets/js/EstimoteBeacons.js"></script>
+	<script src="assets/js/app.js"></script>
+  </head>
+  
+  <body>  
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+		  <!-- Title -->
+		  <span class="mdl-layout-title">Test App</span>
+		</div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title"; id="beacontitle";>Scan Beacon</span>
+		<nav class="mdl-navigation">
+		  <a class="mdl-navigation__link" href="index.html" id="mainmenupage">Main Page</a>
+		  <a class="mdl-navigation__link" href="vibrate.html"; id="vibratepage">Vibration Page</a>
+		  <a class="mdl-navigation__link" href="torchlight.html">Torchlight Page</a>
+		  <a class="mdl-navigation__link" href="">SideLink2</a>
+		</nav>
+	  </div>
+	  
+	  <main class="mdl-layout__content">
+	  
+		<div class="page-content">
+    <div style="text-align:center;font-size:1.5em;" id="cwgreeting">
+      Welcome to Beacon Scan Page!
+    </div>
+	
+	<div class="rangemiddlebtn-container">
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent scan-btn">
+	  Click here to scan
+	</button>
+	</div>
+	</div>
+	
+	</main>
+	</div>
+  </body>
+</html>
